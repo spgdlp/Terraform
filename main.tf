@@ -11,6 +11,6 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-resource "aws_s3_bucket" "tf_bucket_1_spgdlp" {
-  bucket = "my-tf-bucket-1"
+resource "aws_s3_bucket" "tf_bucket_1" {
+  bucket = "my-tf-bucket-1-spgdlp"
 }
