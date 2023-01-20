@@ -6,11 +6,10 @@ terraform {
     }
   }
 }
-
 provider "aws" {
   region = "eu-west-1"
 }
 
-resource "aws_s3_bucket" "tf_bucket_1" {
-  bucket = "my-tf-bucket-1-spgdlp"
+resource "aws_iam_user" "my_iam_user" {
+  name = "spgdlp"
 }
