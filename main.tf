@@ -22,5 +22,5 @@ resource "aws_s3_bucket_versioning" "L1_s3_bucket_versioning" {
 }
 
 output "my_s3_bucket_complete_details" {
-  value = aws_s3_bucket_versioning.L1_s3_bucket_versioning[0].enabled
+  value = aws_s3_bucket_versioning.L1_s3_bucket_versioning
 }
