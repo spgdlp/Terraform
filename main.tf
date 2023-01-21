@@ -10,10 +10,10 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-resource "aws_iam_user" "my_iam_user" {
-  name = "spgdlp"
+resource "aws_s3_bucket" "my_s3_bucket" {
+  bucket = "spgdlp_s3_bucket_001"
 }
 
-output "my_aim_user_complete_details" {
-  value = aws_iam_user.my_iam_user
+output "my_s3_bucket_complete_details" {
+  value = aws_s3_bucket.my_s3_bucket
 }
