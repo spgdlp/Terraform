@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_s3_bucket" {
-  bucket = "spgdlp_s3_bucket_001"
+  bucket = "spgdlp-s3-bucket-001"
 }
 
 output "my_s3_bucket_complete_details" {
