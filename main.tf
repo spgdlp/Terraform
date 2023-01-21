@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "my_s3_bucket" {
 }
 
 resource "aws_s3_bucket_versioning" "L1_s3_bucket_versioning" {
-  bucket = aws_s3_bucket.L1_s3_bucket.id
+  bucket = aws_s3_bucket.my_s3_bucket
   versioning_configuration {
     status = "Enabled"
   }
